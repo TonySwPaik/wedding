@@ -1,0 +1,683 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> 백성욱 🖤 신예성</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="909dff7f-a7d7-4495-9de7-fb3e228e3615" class="page serif"><header><img class="page-cover-image" src="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/DSC07107_resize.jpg" style="object-position:center 60.29%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">💍</span></div><h1 class="page-title"> 백성욱 🖤 신예성</h1><p class="page-description"></p></header><div class="page-body"><p id="66614004-31b6-418c-b7a5-d772e72b6b89" class="">
+</p><figure id="fa856744-61a5-474d-af2e-ee5745625e67" class="image" style="text-align:center"><a href="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/%25EC%25A0%259C%25EB%25AA%25A9%25EC%259D%2584-%25EC%259E%2585%25EB%25A0%25A5%25ED%2595%25B4%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594_-001.jpg"><img style="width:384px" src="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/%25EC%25A0%259C%25EB%25AA%25A9%25EC%259D%2584-%25EC%259E%2585%25EB%25A0%25A5%25ED%2595%25B4%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594_-001.jpg"/></a></figure><figure id="f7e4e6ee-ccd8-4dfa-ab68-10c1c2e63513" class="image"><a href="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/DSC07839-%25EB%25B2%25A0%25EC%25A0%25A4%25EC%25A4%259120x28-1.jpg"><img style="width:2700px" src="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/DSC07839-%25EB%25B2%25A0%25EC%25A0%25A4%25EC%25A4%259120x28-1.jpg"/></a></figure><blockquote id="9c41b346-9130-4315-83bc-afd17e2fdcaf" class="">🤵백남흥, 어성란의 장남 백성욱 <br/>👰(故)신용우, 심태연의 차녀 신예성<br/></blockquote><h2 id="cb27c6bb-1cd5-4e8c-9ae9-09538d4dc20c" class="block-color-default"><strong>2024. 09. 07 토요일 오후 3: 30 </strong></h2><h3 id="21ebcf54-f5e9-4b32-9521-4de974c2fe1f" class="">한양대학교 동문회관 H스퀘어 6층</h3><hr id="30bfc8c7-d905-4bf2-b090-c40392f9f4e2"/><div id="d6d9095e-3fb6-44c9-98fc-f76f64ddcf6e" class="column-list"><div id="5e34be24-5372-4b70-b1f4-6fed9734bc31" style="width:50%" class="column"><figure id="aa6785e9-1df7-4786-ac10-60ddd758628f" class="image"><a href="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/f63649c6-3f2d-4a63-a6e9-3aae0a536f5c.png"><img style="width:336px" src="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/f63649c6-3f2d-4a63-a6e9-3aae0a536f5c.png"/></a></figure></div><div id="fc9c444c-2b06-42f1-bb29-78e4efad1b6a" style="width:50%" class="column"><p id="dd91720f-6801-475e-905d-6476b390104a" class="block-color-gray_background">하늘 아래 내가 받은<br/>가장 커다란 선물은<br/>오늘입니다<br/><br/>오늘 받은 선물 가운데서도<br/>가장 아름다운 선물은<br/>당신입니다<br/><br/>당신 나지막한 목소리와<br/>웃는 얼굴, 콧노래 한 구절이면<br/>한 아름 바다를 안은 듯한 기쁨이었습니다.<br/>                                                       - <br/><strong>나태주, 선물<br/><br/><br/></strong>존재만으로 선물 같은 두 사람이 부부가 되는 시작의 날에 여러분을 모십니다. <br/>자리를 빛내주시면 감사하겠습니다.<br/></p></div></div><p id="917e12b4-e196-40b1-908f-e84b7b65dfe2" class="">💁 화환은 정중히 사양합니다</p><p id="53229ea5-819a-452d-9947-fa680afb5395" class="">
+</p><hr id="5bccc0a6-1fc7-48bd-884d-f8529ff66fe0"/><h1 id="d3316311-636d-4796-a937-51248e2f2769" class="block-color-default">마음 전해주실 곳</h1><p id="f3e4f1a5-8e96-4387-9793-8ec265eb4072" class="">▶ 신랑 측 계좌번호</p><p id="39c8b695-72d0-40fa-81a9-696293ba1a3e" class="">카카오뱅크 3333-02-2121441 백성욱 (신랑)</p><p id="1ca7262d-4498-47a5-ac03-85739434a53a" class="">우리은행      127-08-173779       백남흥 (혼주)</p><p id="4266dc27-55fd-4ef0-a34c-f16aeb27efce" class="">▶ 신부 측 계좌번호</p><p id="f6cef55a-9d68-4332-9210-0fffca68c080" class="">카카오뱅크 3333-03-3147969 신예성 (신부)</p><p id="1f26cace-1fba-4312-9c6b-020168ce0e41" class="">우리은행      1002-332-735676 심태연 (혼주)</p><p id="ea248285-ddd4-4039-a0f0-ff21788f7b21" class="">
+</p><hr id="cc5c2e5c-7cab-480d-9d71-ba438fde2d3f"/><h1 id="18f2a9d7-1a5a-469b-be37-3a9e4ff65b8d" class="">🚩 오시는 길 </h1><p id="7694c2f8-0bbb-4530-abd2-2c9c879453fe" class="">서울시 성동구 마조로 22-2  한양대 동문회관 6층<br/>TEL. 02-2299-9999, 2299-9000<br/></p><figure id="1723eda9-35a3-4b85-bfe1-3316fcb537bb"><div class="source"><a href="https://maps.app.goo.gl/chvtHkt3x3iR3pTE7">https://maps.app.goo.gl/chvtHkt3x3iR3pTE7</a></div></figure><div id="19a0c1db-3f37-45ee-97c9-2d94a770b8f9" class="column-list"><div id="e68ac96f-be24-4005-a3c2-536ab0148950" style="width:93.75%" class="column"><h3 id="8ef0ac0f-c01a-4559-bb22-b3497a6d52e1" class="">지하철</h3><p id="51e017b2-c3b2-42eb-83f5-8f1ca39829c5" class="">2호선 | 한양대역 1번출구 ( 도보 5분)<br/>5호선 | 왕십리역 6번출구 ( 도보 5분 - 안내배)<br/>중앙선, 분당| 왕십리역 13번출구 ( 도보 5분- 안내배치)<br/></p><h3 id="648e3122-2afd-4fd6-863c-07de14cadd24" class="">버스</h3><p id="e287d3b5-3b66-4deb-b83f-7f2b20dbbfc9" class="">한양대 정문 | 지선 2012, 2014, 2222, 2016번, 간선 302번 <br/>한양대부속고등학교 | 간선 121번, 지선 2013번<br/></p><h3 id="47f20306-6df5-421f-9edc-d3c81f992c7c" class="">주차안내</h3><p id="ea918671-0d0f-4bc2-9ec2-408e063c2da4" class="">동문회관 주차장 + 한양대 병원 주차장 총 300대 가능 <br/>하객주차 90분 무료 (추가시간 10분 1,000원)<br/></p></div><div id="6dde51d1-c536-4d56-a93a-6de5526df254" style="width:6.25%" class="column"><p id="c6d8d38e-0dc0-4ed0-bd4c-eb550576367a" class="">
+</p></div></div><hr id="b796af8d-89b0-4c3e-beb0-4d700c744fc3"/><blockquote id="dfaffd18-93e9-4dfd-bab7-6ff26cdb0889" class="">네이버 지도</blockquote><figure id="b66588d1-8f46-4118-8ac8-8127780c27f7"><a href="https://naver.me/FeONRATx" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://naver.me/FeONRATx</div></div></a></figure><blockquote id="a9a050ed-2ecc-498e-b6c7-072805b04083" class="">카카오 지도</blockquote><figure id="0ea7889d-bd59-4135-b552-af591d1f2b11"><a href="https://place.map.kakao.com/m/26467202" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">한양대학교 동문회관</div><div class="bookmark-description">서울 성동구 마조로 22-2 (행당동 15-1)</div></div><div class="bookmark-href"><img src="https://t1.daumcdn.net/localimg/localimages/07/common/kakaomap_favicon.ico" class="icon bookmark-icon"/>https://place.map.kakao.com/m/26467202</div></div><img src="http://map3.daum.net/staticmap/og?type=place&amp;srs=wcongnamul&amp;size=400x200&amp;m=509209%2C1127787&amp;service=placeweb" class="bookmark-image"/></a></figure><figure id="d7acd266-8ff2-4292-a203-f8051e917ab0" class="image" style="text-align:left"><a href="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/260a7eaa-7122-435f-b5dc-8fc1d25babb7.png"><img style="width:192px" src="%E1%84%87%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20%F0%9F%96%A4%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A5%E1%86%BC%20909dff7fa7d744959de7fb3e228e3615/260a7eaa-7122-435f-b5dc-8fc1d25babb7.png"/></a></figure><p id="ae08c4b6-5d0d-4214-9c30-d5930745b6eb" class="">See you soon~</p><p id="9fb2f685-9284-4c85-a73a-a915f208e686" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
